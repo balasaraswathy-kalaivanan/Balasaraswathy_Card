@@ -1,0 +1,47 @@
+body {
+    margin: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.avatar {
+    width: 150px;
+}
+
+@keyframes movecard {
+  0%   {background-color: #bc556f;}
+  15%  {background-color: #f7a2a1;}
+  45%  {background-color: #f9a470;}
+  70%  {background-color: #e9d022;}
+  85%  {background-color: #ffed00;}
+  100% {background-color: #ffb703;}
+}
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #ffb703;
+    color: #000000;
+    border-radius: 20px;
+    text-shadow: 2px 2px #EFE9A9;
+    border: 6px dotted #EFE9A9;
+    box-shadow: 8px 8px lightgray;
+    animation-name: movecard;
+    animation-duration: 7s;
+}
+
+.element-border {
+    border: 2px solid #EFE9A9;
+}
+
+.avatar:hover {
+    border: 5px solid #ffee32;
+}
+
+.avatar-details:hover{
+    color: #ffed00;
+    text-shadow: 2px 2px black;
+    opacity: 10;
+}
